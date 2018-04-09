@@ -10,6 +10,7 @@ public class TerrainLoader : MonoBehaviour
 
 	public float tileSize = .2f;
 	public float hillHeight = 1f;
+	public float _TimeMod = 1f;
 	// Private methods.
 	//----------------------------------------------------------------------------------------------
 
@@ -51,7 +52,7 @@ public class TerrainLoader : MonoBehaviour
 	float angle = 0f;
 	void Update() {
 		// time proceeds like normal
-		totalTime += Time.deltaTime;
+		totalTime += Time.deltaTime * _TimeMod;
 		// wavelength - sampple pnoise in a 1px line over time
 		sample1 = Mathf.PerlinNoise (0f, totalTime);
 		// use that sample to modify how fast we traverse 1px line sample 2
