@@ -53,7 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\DepthCameraScript.cs" />
      <Compile Include="Assets\RenderDepthImageEffect.cs" />
-     <Compile Include="Assets\Rivergen.cs" />
+     <Compile Include="Assets\RiverGenWithNoiseTexture.cs" />
      <Compile Include="Assets\Scripts\AddRandom.cs" />
      <Compile Include="Assets\Scripts\BuildMap.cs" />
      <Compile Include="Assets\Scripts\BuildRock.cs" />
